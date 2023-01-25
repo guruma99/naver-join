@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  width: 450px;
+  margin-bottom: 40px;
+}
+
+.naver-logo {
+  padding: 50px 0; 
+  width: fit-content;
+  margin: 0 auto;
+
+}
+
+.naver-logo img{
+  width: 300px;
+}
+
+.lang {
+  float: right;
+  transform: translate(100px,-80px);
+
+}
+
+.checkbox-flex {
+  display: flex;
+  width: 100%;
+  position: relative;
+  
+  margin-bottom: 10px;
+}
+
+.checkbox-text-underline {
+  text-decoration: underline;
+}
+
+.green {
+  font-size: 14px;
+  color: #03c75a;
+  margin-left: 5px;
+}
+
+.gray {
+  font-size: 14px;
+  color: #777;
+  margin-left: 5px;
+}
+
+.checkbox-flex input[type='checkbox'] {
+  position: absolute;
+}
+
+/* input[type='checkbox'] {
+  opacity: 0;
+}
+
+#all {
+  display: none;
+} */
+
+.checkbox-text {
+  font-weight: 700;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.text-box {
+  padding: 0 10px;
+  border: 1px solid #e1e1e1;
+  width: 450px;
+  height: 120px;
+  overflow: scroll;
+  overflow-x: hidden;
+  color: #777;
+  margin-bottom: 40px;
+}
+
+.first-text {
+  padding: 10px 0;
+}
+
+.footer-button {
+  width: 450px;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  margin-top: 30px;
+}
+
+footer button {
+width: 49%;
+padding: 17px 0;
+border-radius: 5px;
+border: none;
+background-color: #03c75a;
+color: #fff;
+font-size: 15px;
+}
+
+footer p {
+  font-size: 17px;
+  color: #666;
+}
