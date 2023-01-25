@@ -32,7 +32,7 @@ $('#all').on('click', function(){
   else {
     $(".normal-check").attr("checked", false);
     $('#all_label img').attr('src', './images/pc_check_off_24.png')
-    $('.normal img').attr('src', './images/pc_check_off_24.png')
+    $('.normal img').attr('src','./images/pc_check_off_24.png')
   }
   });
   // 전체박스 클릭,해제시 이미지 변화

@@ -62,13 +62,13 @@ header {
   position: absolute;
 }
 
-/* input[type='checkbox'] {
+input[type='checkbox'] {
   opacity: 0;
 }
 
 #all {
   display: none;
-} */
+}
 
 .checkbox-text {
   font-weight: 700;
