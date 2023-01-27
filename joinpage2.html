@@ -1,12 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="page2.css">
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <title>네이버 회원가입</title>
 </head>
 <body>
-  
+  <div class="wrapper">
+    <header class="global-header">
+      <h1 class="logo">
+        <img src="./images/logo.png" alt="네이버로고">
+      </h1>
+    </header>
+
+    <section class="join-form">
+      <form id="form2" action="./send.html">
+        <div class="infor-list">
+          <div class="infor req">
+            <p>아이디</p>
+            <div class="id-gray">
+              <input class="id-input" id="id-input" type="text" name="userid">
+              <div class="id-text">@naver.com</div>
+            </div>
+            <p class="red-alert" id="id-red">필수 정보입니다.</p>
+          </div>
+
+          <div class="infor req">
+            <p>비밀번호</p>
+            <div class="pw-img">
+              <input class="pw-input" type="password">
+              <div class="pw-image"></div>
+            </div>
+            <p class="red-alert" id="pw-red">필수 정보입니다.</p>
+          </div>
+
+          <div class="infor req">
+            <p>비밀번호 재확인</p>
+            <div class="pw-img">
+              <input class="repw-input" type="password">
+              <div class="repw-image"></div>
+            </div>
+            <p class="red-alert" id="repw-red">필수 정보입니다.</p>
+          </div>
+
+          <div class="infor req">
+            <p>이름</p>
+            <input class="name-input" type="text">
+            <p class="red-alert" id="name-red">필수 정보입니다.</p>
+          </div>
+
+          <div class="infor req">
+            <p>생년월일</p>
+            <div class="birthdate">
+              <input class="year" id="bd" type="text" placeholder="년(4자)">
+              <select class="month" id="bd" value="월" name="월">
+                <optgroup label="월">
+                  <option selected hidden value="">월</option>
+                  <option value="1">1월</option>
+                  <option value="2">2월</option>
+                  <option value="3">3월</option>
+                  <option value="4">4월</option>
+                  <option value="5">5월</option>
+                  <option value="6">6월</option>
+                  <option value="7">7월</option>
+                  <option value="8">8월</option>
+                  <option value="9">9월</option>
+                  <option value="10">10월</option>
+                  <option value="11">11월</option>
+                  <option value="12">12월</option>
+                </optgroup>
+              </select>
+              <input class="date" id="bd" type="text" placeholder="일">
+            </div>
+            <p class="red-alert" id="birth-red">필수 정보입니다.</p>
+          </div>
+
+          <div class="infor cho">
+            <p>성별</p>
+            <div class="sex-flex">
+              <input type="radio" id="man">
+              <div class="btn-sex">남자</div>
+              
+              <input type="radio" id="woman">
+              <div class="btn-sex">여자</div>
+              
+              <input type="radio" id="pass">
+              <div class="btn-sex">선택안함</div>
+            </div>
+          </div>
+
+          <div class="infor cho">
+            <p>본인 확인 이메일<span>(선택)</span></p>
+            <input type="text" placeholder="선택입력">
+          </div>
+
+          <div class="infor cho">
+            <p>휴대전화</p>
+            <select class="phone">
+              <optgroup>
+                <option value="">대한민국 +82</option>
+                <option value="">011</option>
+                <option value="">016</option>
+                <option value="">017</option>
+              </optgroup>
+            </select>
+            <div class="btn-flex">
+              <input type="text" placeholder="전화번호 입력">
+              <button class="btn-green" type="button">인증번호 받기</button>
+            </div>
+            <input type="text" placeholder="인증번호 입력하세요">
+          </div>
+
+          <div class="infor cho">
+            <p>주소</p>
+            <div class="btn-flex">
+              <input type="text" placeholder="우편번호">
+              <button class="btn-green" type="button">우편번호 찾기</button>
+            </div>
+            <input type="text" placeholder="도로명주소">
+            <input type="text" placeholder="지번주소">
+            <input type="text" placeholder="상세주소">
+            <input type="text" placeholder="참고항목">
+          </div>
+        </div>
+
+        <button class="btn-join" type="submit">가입하기</button>
+      </form>
+    </section>
+
+  </div>
+  <script src="./page2.js"></script>
 </body>
 </html>

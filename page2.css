@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+  background-color: #f5f6f7;
+}
+
+.global-header {
+  /* position: relative; */
+  max-width: 468px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;
+}
+
+.logo img {
+  width: 240px;
+}
+
+.join-form {
+  max-width: 460px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.infor {
+  margin-bottom: 5px;
+}
+
+.infor p:first-child{
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.id-input.inputboxact, 
+.pw-input.inputboxact,
+.repw-input.inputboxact,
+.name-input.inputboxact,
+.year.inputboxact,
+.month.inputboxact,
+.date.inputboxact {
+  border-color: #03C75A;
+}
+
+.infor input{
+  width: 460px;
+  height: 45px;
+  border:1px solid #e1e1e1;
+  font-size: 17px;
+}
+
+
+.id-gray {
+  position: relative;
+}
+
+.id-text {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  font-size: 15px;
+  color: #777;
+}
+
+.red-alert,
+#id-red,
+#pw-red,
+#repw-red,
+#name-red,
+#birth-red{
+  visibility: hidden;
+  font-size: 15px;
+  color: red;
+  margin-top: 6px;
+}
+
+.pw-img {
+  position: relative;
+}
+
+.pw-image {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  background-image: url(./images/m_icon_pw_step_01.png);
+}
+
+.repw-image {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  background-image: url(./images/m_icon_pw_step_02.png);
+}
+
+.sex-flex input[type="radio"] {
+  display: none;
+
+}
+
+.sex-flex {
+  display: flex;
+  justify-content: space-between;
+  width: 460px;
+}
+
+.btn-sex {
+  width: 32.5%;
+  height: 45px;
+  /* background-color: #03C75A; */
+  border: 1px solid #e1e1e1;
+  color: #333;
+  text-align: center;
+  line-height:45px;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.birthdate {
+  display: flex;
+  justify-content: space-between;
+  width: 460px;
+}
+
+#bd {
+  width: 32.5%;
+}
+
+.infor.cho {
+  margin-bottom: 15px;
+}
+
+.infor.cho input[type="text"] {
+  margin-bottom: 5px;
+}
+
+.btn-flex {
+  display: flex;
+}
+
+.btn-green {
+  width: 150px;
+  height: 45px;
+  border: none;
+  background-color: #03C75A;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.btn-join {
+  width: 100%;
+  height: 45px;
+  border: none;
+  background-color: #03C75A;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+.phone {
+  width: 100%;
+  height: 45px;  border: 1px solid #e1e1e1;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
