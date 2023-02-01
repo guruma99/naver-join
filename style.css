@@ -97,8 +97,14 @@ input[type='checkbox'] {
   justify-content: space-between;
 }
 
+#red-alert {
+  visibility: hidden;
+  font-size: 14px;
+  color: red;
+}
+
 footer {
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 footer button {

@@ -37,7 +37,7 @@
     
     
     <main>
-      <div class="checkbox-flex">
+      <div class="checkbox-flex req">
         <input type="checkbox" class="normal-check normal-check1">
         <label class="normal normal1">
           <img src="./images/pc_check_off_24.png" alt="회색체크">
@@ -321,7 +321,7 @@
               </p>
       </div>
 
-      <div class="checkbox-flex">
+      <div class="checkbox-flex req">
         <input type="checkbox" class="normal-check normal-check2">
         <label for="nor" class="normal normal2">
           <img src="./images/pc_check_off_24.png" alt="회색체크">
@@ -1174,11 +1174,15 @@
 
     </main>
 
+    <p id="red-alert">
+      네이버 이용약관과 개인정보 수집 및 
+      이용에 대한 안내에 모두 동의해주세요.
+    </p>
 
     <footer>
       <div class="footer-button">
-        <button>취소</button>
-        <button>확인</button>
+        <button type="button" id="cancel">취소</button>
+        <button type="submit" id="submit">확인</button>
       </div>
       <p>회사,동아리 등 단체에서 사용할 ID가 필요하세요? 단체 회원 가입
       </p>
